@@ -1,23 +1,28 @@
-const firstName = ["Mario", "Giuseppe", "Giovanni", "Carlo"];
-const lastName = ["Rossi", "verdi", "Bianchi", "Gialli"];
-const min = 1;
-const max = 3;
+const firstNames = ["Mario", "Giuseppe", "Giovanni", "Carlo"];
+const lastNames = ["Rossi", "verdi", "Bianchi", "Gialli"];
 
-for (let i = 0; i < firstName.length; i++) {
-
-    for (let i = 0; i < lastName.length; i++) {
-        const randomLastName = Math.floor(Math.random() * lastName.length);
-        const randomName = Math.floor(Math.random() * firstName.length);
-        let randomLast = (lastName[randomLastName]);
-
-        let randomFirst = (firstName[randomName]);
-        console.log(randomFirst + " " + randomLast);
+const listaInvitati = [];
 
 
-    };
+for (let i = 0; i < 30; i++) {
+    const randomLastName = Math.floor(Math.random() * lastNames.length);
+    const randomName = Math.floor(Math.random() * firstNames.length);
+    let randomLast = (lastNames[randomLastName]);
+
+    let randomFirst = (firstNames[randomName]);
+    let nuovoNome = (randomFirst + " " + randomLast);
+
+    console.log(nuovoNome);
+    //convertire array in stringa --> nuovoNome.join(" ")
+
 
 
 };
+
+
+
+
+
 
 
 
